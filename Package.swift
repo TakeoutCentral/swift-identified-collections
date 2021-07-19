@@ -19,12 +19,14 @@ let package = Package(
   dependencies: [
     .package(url: "https://github.com/apple/swift-collections", from: "0.0.1"),
     .package(url: "https://github.com/apple/swift-collections-benchmark", from: "0.0.2"),
+    .package(url: "https://github.com/TakeoutCentral/TCIdentifiable", from: "1.0.0"),
   ],
   targets: [
     .target(
       name: "IdentifiedCollections",
       dependencies: [
-        .product(name: "OrderedCollections", package: "swift-collections")
+        .product(name: "OrderedCollections", package: "swift-collections"),
+        .product(name: "TCIdentifiable", package: "TCIdentifiable"),
       ]
     ),
     .testTarget(

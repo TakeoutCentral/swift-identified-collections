@@ -1,4 +1,7 @@
 import OrderedCollections
+import TCIdentifiable
+
+public typealias Identifiable = TCIdentifiable
 
 /// An ordered collection of identifiable elements.
 ///

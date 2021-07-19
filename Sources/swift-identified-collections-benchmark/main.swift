@@ -1,5 +1,8 @@
 import CollectionsBenchmark
 import IdentifiedCollections
+import TCIdentifiable
+
+typealias Identifiable = TCIdentifiable
 
 extension Int: Identifiable { public var id: Self { self } }
 
